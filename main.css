@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h2{
+    margin: 0px;
+}
+header input[typ="search"]{
+    padding: 6px 10px;
+    border:none;
+    width: 200px;
+    flex-grow: 1;
+}
+header button{
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3;
+}
