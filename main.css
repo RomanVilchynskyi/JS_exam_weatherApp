@@ -1,23 +1,120 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: sans-serif;
 }
-header h2{
-    margin: 0px;
+
+h1, h2, h3, h4 {
+  color: #ffffff;
 }
-header input[typ="search"]{
-    padding: 6px 10px;
-    border:none;
-    width: 200px;
-    flex-grow: 1;
+
+.tab-content,
+.weather-card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #444;
 }
-header button{
-    padding: 8px 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3;
+
+input, button {
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.tab.active {
+  background-color: #444;
+  color: #fff;
+}
+
+header {
+  background-color: #005f6b;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  width: 200px;
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.search-box button {
+  padding: 6px;
+  cursor: pointer;
+  background-color: #333;
+  color: #eee;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  color: #eee;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #444;
+}
+
+.tab.active {
+  background-color: #555;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#error-message {
+  text-align: center;
+  padding: 50px;
+  color: #ff5555;
+}
+
+.weather-card {
+  background-color: #222;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.nearby-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nearby-card {
+  flex: 1 0 100px;
+  text-align: center;
+  color: #ddd;
 }

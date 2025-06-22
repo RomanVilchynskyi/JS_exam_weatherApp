@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
     <header>
+    <h1>MY WEATHER</h1>
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city" />
+      <button id="search-btn">🔍</button>
+    </div>
+  </header>
 
-        <h2>My weather</h2>
-        <input type="search">
-        <button type="submit">
-            <i class="bi bi-search"></i>    
-        </button>
-    </header>
-    <div class=""></div>
+  <nav>
+    <button class="tab active" data-tab="today">Today</button>
+    <button class="tab" data-tab="forecast">5-day forecast</button>
+  </nav>
+
+  <main>
+    <section id="today" class="tab-content active">
+      <div id="current-weather"></div>
+      <div id="hourly-weather"></div>
+      <div id="nearby-cities"></div>
+    </section>
+
+    <section id="forecast" class="tab-content">
+      <div id="daily-forecast"></div>
+      <div id="selected-day-details"></div>
+    </section>
+
+    <section id="error-message" style="display:none;">
+      <h2>404</h2>
+      <p id="error-text">City could not be found</p>
+    </section>
+  </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
